@@ -1,5 +1,5 @@
 name:                network-simple
-version:             0.4.3
+version:             0.4.4
 homepage:            https://github.com/k0001/network-simple
 bug-reports:         https://github.com/k0001/network-simple/issues
 license:             BSD3
@@ -34,8 +34,9 @@ library
   exposed-modules:   Network.Simple.TCP
   other-modules:     Network.Simple.Internal
   build-depends:     base         (>=4.7 && < 5)
-                   , network      (>=2.3)
+                   , network
+                   , network-bsd
                    , bytestring
                    , transformers
                    , safe-exceptions
-                   , socks
+                   , socks        (>= 0.6)
